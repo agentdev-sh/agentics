@@ -24,6 +24,7 @@ concurrency:
   cancel-in-progress: false
 
 tools:
+  bash: ["cat", "ls", "find", "grep", "head", "tail", "wc"]
   github:
     mode: local
     read-only: true

@@ -26,6 +26,7 @@ safe-outputs:
     max: 1
 
 tools:
+  bash: ["cat", "ls", "find", "grep", "head", "tail", "wc"]
   github:
     toolsets: [default]
     min-integrity: none # This workflow is allowed to examine and comment on any issues

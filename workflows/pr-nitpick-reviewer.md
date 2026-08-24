@@ -10,6 +10,7 @@ permissions:
   actions: read
 
 tools:
+  bash: ["cat", "ls", "find", "grep", "head", "tail", "wc"]
   cache-memory: true
   github:
     toolsets: [pull_requests, repos]

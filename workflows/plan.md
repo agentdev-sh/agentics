@@ -23,6 +23,7 @@ safe-outputs:
     close-older-discussions: true
 
 tools:
+  bash: ["cat", "ls", "find", "grep", "head", "tail", "wc"]
   github:
     toolsets: [all]
     # If in a public repo, setting `lockdown: false` allows
