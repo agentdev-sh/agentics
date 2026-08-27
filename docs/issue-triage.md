@@ -29,7 +29,7 @@ graph LR
     E --> F[Post Triage Report]
 ```
 
-The workflow may search for relevant documentation, error messages, or similar issues online to assist with triage.
+The workflow reads the issue discussion, searches open and recent closed issues, and consults repository documentation when it helps clarify expected behavior or contribution requirements.
 
 ## Usage
 
@@ -37,9 +37,9 @@ This workflow triggers automatically when issues are created or reopened—you c
 
 ### Configuration
 
-This workflow requires no configuration and works out of the box. You can customize triage criteria, labeling logic, and automated responses.
+The workflow includes an allowed set of type, priority, duplicate, spam, and information-request labels. Ensure those labels exist in the target repository, or edit the list and priority definitions to match the repository's conventions.
 
-After editing run `gh aw compile` to update the workflow and commit all changes to the default branch.
+After editing, run `gh aw compile` and commit both the Markdown workflow and its generated lock file to the default branch.
 
 ### Human in the loop
 
